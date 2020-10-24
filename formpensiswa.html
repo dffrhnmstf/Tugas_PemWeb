@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Pendaftaran</title>
+    </head>
+    <body bgcolor="black" text="white">
+        <h1>FORM PENDAFTARAN SISWA</h1>
+        <h2>Yayasan Pendidikan Harapan Bangsa</h2>
+        <h3>Isian Biodata</h3>
+        <br>
+        <div id="contact">
+            <form action="submitted.html" method="get">
+                <label for="">Nama</label>
+                <input type="text">
+                <br>
+                <label for="">Tempat Lahir</label>
+                <input type="text">
+                <br>
+                <label for="">Tgl Lahir</label>
+                <input type="date">
+                <br>
+                <label for="">Anak Ke-</label>
+                <input type="number">
+                <br><br>
+                <label for="">Jenis Kelamin</label>
+                <br>
+                <label for="">Laki-Laki</label>
+                <input type="radio" name="Jenis Kelamin" value="Laki-Laki">
+                <br>
+                <label for="">Perempuan</label>
+                <input type="radio" name="Jenis Kelamin" value="Perempuan">
+                <br><br>
+                <label for="">Pendidikan Yang Akan Ditempuh</label>
+                <br>
+                <label for="">Taman Kanak-Kanak</label>
+                <input type="radio" name="TK" value="TK">
+                <br>
+                <label for="">Sekolah Dasar</label>
+                <input type="radio" name="SD" value="SD">
+                <br>
+                <label for="">Sekolah Menengah Pertama</label>
+                <input type="radio" name="SMP" value="SMP">
+                <br>
+                <label for="">Sekolah Menengah Atas</label>
+                <input type="radio" name="SMA" value="SMA">
+                <br><br>
+                <label for="">Agama</label>
+                <select>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Kong Hu Cu">Kong Hu Cu</option>
+                </select>
+                <br><br>
+                <label for="">Alamat</label>
+                <div>
+                    <textarea cols="30" rows="5"></textarea>
+                </div>
+                <br>                
+                <input type="submit" value="kirim">
+            </form>
+        </div>
+    </body>
+</html>
