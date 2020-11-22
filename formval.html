@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: mediumaquamarine;">
     <style>
         * {box-sizing: border-box}
     
     .container {
       padding: 15px;
-      font: 12px helvetica;
-    }
+      font: 12px verdana;  
+      }
     
     input[type=text] {
       width: 100%;
@@ -20,28 +20,28 @@
       margin: 5px 0 25px 0;
       display: inline-block;
       border: none;
-      background:gold;
+      background:darkgray;
     }
     
-    input[type=text]:focus, input[type=password]:focus {
-      background-color:cornflowerblue;
+    input[type=text]:focus {
+      background-color:darkkhaki;
       outline: none;
     }
     
     hr {
-      border: 1px solid beige;
+      border: 5px solid beige;
       margin-bottom: 25px;
     }
     
     .loginform {
-      background-color:gold;
-      color: rgb(255, 255, 255);
+      background-color:lightyellow;
+      color:maroon;
       padding: 16px 20px;
       margin: 8px 0;
       border: none;
       cursor: pointer;
       width: 100%;
-      opacity: 0.9;
+      opacity: 1.0;
     }
     
     .loginform:hover {
@@ -53,14 +53,13 @@
     }
     
     </style>
-        <form>
+        <form style="text-align: center;">
             <div class="container">
               <h1>Validation</h1>
               <hr>
-              <label for="Nickname"><b>Nickname</b></label>
-              <input type="text" placeholder="Enter Nickname" name="Nickname" id="Nickname" required>
-          
-              <button type="submit" onclick="return login()" class="loginform">Submit</button>
+              <label for="Nickname" style="font-family: monospace;"><b>Nickname</b></label>
+              <input type="text" placeholder="Enter Nickname" style="font-family: 'Times New Roman'; text-align: center;" name="Nickname" id="Nickname" required>         
+              <button type="submit" style="font-family:'Times New Roman';" onclick="return login()" class="loginform">Submit</button>
             </div>
         </form>
 </body>
@@ -71,10 +70,6 @@
 
         if (nickname == "") {
             alert("Nickname Harap Di isi");
-            return false;
-        }
-        else if (password.length < 8) {
-            alert("Password Tidak Boleh Kurang Dari 8 Karakter");
             return false;
         }
         else if (nickname == "daffa") {
